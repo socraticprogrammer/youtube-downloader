@@ -15,7 +15,6 @@ module.exports = {
   coverageProvider: 'v8',
   clearMocks: true,
   preset: 'ts-jest',
-  setupFiles: ['./jest-setup-before-env.js'],
   transform: {
     '.+\\.ts$': 'ts-jest'
   },
