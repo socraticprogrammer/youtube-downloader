@@ -36,15 +36,11 @@ jobs:
         run: pnpm test:ci
 
       - name: Run tests for coveralls
-        run: pnpm test:coveralls
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: coveralls --service=github
 
       - name: Build
         run: pnpm build
 
-      - name: Coveralls
-        if: github.repository == 'thallesyasmim/youtube-downloader'
-        uses: coverallsapp/github-action@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+
