@@ -21,6 +21,7 @@
     "test:unit:watch": "pnpm test -- --watch  --findRelatedTests tests -c jest-unit-config.js",
     "test:integration": "pnpm test -- --watch -c jest-integration-config.js",
     "test:staged": "pnpm test -- --findRelatedTests tests",
+    "test:coveralls": "jest --coverage && coveralls < coverage/lcov.info",
     "husky": "husky install"
   },
   "author": {
