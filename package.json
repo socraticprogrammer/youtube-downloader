@@ -21,7 +21,7 @@
     "test:unit:watch": "pnpm test -- --watch  --findRelatedTests tests -c jest-unit-config.js",
     "test:integration": "pnpm test -- --watch -c jest-integration-config.js",
     "test:staged": "pnpm test -- --findRelatedTests tests",
-    "test:coveralls": "jest --coverage && coveralls < coverage/lcov.info",
+    "test:coveralls": "pnpm test:ci && cat ./coverage/lcov.info | coveralls",
     "husky": "husky install"
   },
   "author": {
@@ -47,7 +47,6 @@
     "@types/node": "^18.11.5",
     "@typescript-eslint/eslint-plugin": "^5.41.0",
     "@typescript-eslint/parser": "^5.41.0",
-    "coveralls": "^3.1.1",
     "editorconfig-checker": "^4.0.2",
     "eslint": "^8.26.0",
     "eslint-config-prettier": "^8.5.0",
@@ -71,5 +70,8 @@
     "node": ">=18",
     "npm": ">=8",
     "pnpm": ">=7.10.x"
+  },
+  "dependencies": {
+    "coveralls": "^3.1.1"
   }
 }
