@@ -48,6 +48,7 @@ jobs:
         run: pnpm build
 
       - name: Coveralls
+        if: github.repository == 'thallesyasmim/youtube-downloader'
         uses: coverallsapp/github-action@master
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
