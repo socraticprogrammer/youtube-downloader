@@ -27,5 +27,8 @@
     "node": ">=18",
     "npm": ">=8",
     "pnpm": ">=7.10.x"
+  },
+  "devDependencies": {
+    "typescript": "^4.8.4"
   }
 }
