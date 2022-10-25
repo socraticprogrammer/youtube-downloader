@@ -7,6 +7,13 @@
   "scripts": {
     "start": "node dist/src/main/index.js",
     "dev": "ts-node-dev -r tsconfig-paths/register --respawn --transpile-only --ignore-watch node_modules --clear --exit-child --rs --no-notify .",
+    "check": "npm-check -u",
+    "check:production": "npm-check -u -p",
+    "editorconfig": "editorconfig-checker",
+    "style": "prettier --ignore-path .gitignore --check **/*.ts",
+    "style:fix": "prettier --ignore-path .gitignore --write **/*.ts",
+    "lint": "eslint --ignore-path .gitignore src tests --ext .ts",
+    "lint:fix": "eslint --ignore-path .gitignore src --ext .ts --fix",
     "test": "jest --passWithNoTests --noStackTrace --runInBand --no-cache --testTimeout=10000"
   },
   "author": {
@@ -30,6 +37,7 @@
     "@types/node": "^18.11.5",
     "@typescript-eslint/eslint-plugin": "^5.41.0",
     "@typescript-eslint/parser": "^5.41.0",
+    "editorconfig-checker": "^4.0.2",
     "eslint": "^8.26.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-config-standard": "^17.0.0",
