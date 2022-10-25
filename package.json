@@ -15,6 +15,7 @@
     "lint": "eslint --ignore-path .gitignore src tests --ext .ts",
     "lint:fix": "eslint --ignore-path .gitignore src --ext .ts --fix",
     "test": "jest --passWithNoTests --noStackTrace --runInBand --no-cache --testTimeout=10000",
+    "test:ci": "pnpm test -- --coverage --silent",
     "test:unit": "pnpm test -- -c jest-unit-config.js",
     "test:unit:watch": "pnpm test -- --watch  --findRelatedTests tests -c jest-unit-config.js",
     "test:integration": "pnpm test -- --watch -c jest-integration-config.js",
