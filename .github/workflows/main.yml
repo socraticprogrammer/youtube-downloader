@@ -22,6 +22,10 @@ jobs:
       - uses: pnpm/action-setup@v2.2.4
         with:
           version: 7
+      - name: Coveralls
+      - uses: coverallsapp/github-action@master
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
       - uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
@@ -41,8 +45,3 @@ jobs:
 
       - name: "Build"
         run: "pnpm build"
-
-      - name: Coveralls
-      - uses: coverallsapp/github-action@master
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
