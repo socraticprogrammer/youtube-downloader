@@ -2,7 +2,7 @@
   "name": "youtube-downloader",
   "version": "0.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/main/index.ts",
   "private": true,
   "scripts": {
     "start": "node dist/src/main/index.js",
