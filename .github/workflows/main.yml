@@ -38,7 +38,7 @@ jobs:
       - name: Run tests for coveralls
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: coveralls --service=github
+        run: pnpm coveralls --service=github
 
       - name: Build
         run: pnpm build
