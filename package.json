@@ -1,0 +1,31 @@
+{
+  "name": "youtube-downloader",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Thalles Gabriel",
+    "email": "thallesgabriel1307@gmail.com",
+    "url": "https://bit.ly/thalles-gabriel"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thallesyasmim/youtube-downloader.git"
+  },
+  "keywords": [],
+  "license": "GPL-3.0",
+  "bugs": {
+    "email": "thallesgabriel1307@gmail.com",
+    "url": "https://github.com/thallesyasmim/youtube-downloader/issues"
+  },
+  "homepage": "https://github.com/thallesyasmim/youtube-downloader#readme",
+  "engine": {
+    "node": ">=18",
+    "npm": ">=8",
+    "pnpm": ">=7.10.x"
+  }
+}
