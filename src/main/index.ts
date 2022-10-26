@@ -1,3 +1,3 @@
 function hello() {
-  console.log('word!')
+  console.log('word')
 }
